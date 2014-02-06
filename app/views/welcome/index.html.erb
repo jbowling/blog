@@ -34,3 +34,26 @@ a
 <p>or</p>
 <a href="http://www.gaumard.com/noelle/">You can check out one of the medical simulators I support at the office.</a>
 <p>Enjoy!</p>
+
+<a href= "http://0.0.0.0:3000/bio/bio">Link to my bio page</a> This is an example of an absolute url (or absolute path)
+
+<%=
+link_to('link to welcome, rel', '../../welcome/index')
+%> This is an example of a relative url (or relative path)
+
+<%=
+'Holy Cow!  It\'s Ruby Code'
+%>
+<p> </p>
+<%=
+@our_names
+%>
+
+<%=link_to('https://med.emory.edu/excel/images/bio/Bowling.jpg')%>
+
+
+<ul>
+	<% @our_names.each do |item| %>
+	<li> <%= item %> </li>
+	<% end %>
+</ul>

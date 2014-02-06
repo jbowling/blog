@@ -1,7 +1,14 @@
 Blog::Application.routes.draw do
-  get "welcome/index"
-get "bio/index" 
-get "sitemap/index" 
+
+root "welcome#index" #Using the root command directs the root (i.e., 0.0.0.0:3000 location) to the page of your choosing in your site.
+
+get "welcome/index" 
+get "welcome" => "welcome#index"
+get "bio/bio" 
+get "sitemap/sitemap" 
+get "contact/contact"
+
+# get "welcome/" => "welcome#index" - this is an example of a hash rocket.  It effectively reduces the length of the URL.
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
