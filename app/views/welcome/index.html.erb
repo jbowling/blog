@@ -1,31 +1,5 @@
-<h1>Jess Bowling Blog</h1>
-<table>
-<tr>
-  <td align="center" valign="middle" width="65"><u>Home</u></td>
-  <td align="center" valign="middle" width="65">Bio</td>
-  <td align="center" valign="middle" width="65">Contact</td>
-  <td align="center" valign="middle" width="65">Site Map</td>
-</tr>
-</table>
 
-<head>
-<style>
-body
-{background: #606060}
-td
-{border-width:1px; border-style:solid;}
-h1
-{font:30px arial,sans-serif; color: #FFFFFF}
-td
-{font:15px arial,sans-serif; color: #FFFFFF}
-p
-{font:15px arial,sans-serif; color: #FFFFFF}
-a
-{font:15px arial,sans-serif; color: #FFFFFF}
-</style>
-</head>
 <p></p>
-<img src="https://med.emory.edu/excel/images/bio/Bowling.jpg">
 <p>Hey, welcome to my blog.</p>
 </p>
 <a href="http://www.techtalentsouth.com">You can visit the friendly folks at Tech Talent South by clicking on me.</a>
@@ -35,23 +9,10 @@ a
 <a href="http://www.gaumard.com/noelle/">You can check out one of the medical simulators I support at the office.</a>
 <p>Enjoy!</p>
 
-<a href= "http://0.0.0.0:3000/bio/bio">Link to my bio page</a> This is an example of an absolute url (or absolute path)
-
-<%=
-link_to('link to welcome, rel', '../../welcome/index')
-%> This is an example of a relative url (or relative path)
-
 <%=
 'Holy Cow!  It\'s Ruby Code'
 %>
 <p> </p>
-<%=
-@our_names
-%>
-
-<%=link_to('https://med.emory.edu/excel/images/bio/Bowling.jpg')%>
-
-
 <ul>
 	<% @our_names.each do |item| %>
 	<li> <%= item %> </li>

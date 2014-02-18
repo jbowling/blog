@@ -1,0 +1,21 @@
+<p>Hey y'all</p>
+<p>(AKA welcome visitors!).</p>
+
+<% if @first_name %>
+
+	<%= @first_name %>
+	<%= @last_name %>
+
+<% else %>
+
+<form method="post">
+
+	<input type="text" name="firstname">
+	<input type="text" name="lastname">
+	<button type="submit">Submit Me!</button>
+	<input name="authenticity_token" type="hidden"
+	value="<=% form_authenticity_token() %>" />
+
+<% end %>
+
+</form>

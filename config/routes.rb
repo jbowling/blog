@@ -1,12 +1,16 @@
 Blog::Application.routes.draw do
 
-root "welcome#index" #Using the root command directs the root (i.e., 0.0.0.0:3000 location) to the page of your choosing in your site.
+root "welcome#index" #Using the root command directs the root (i.e., 0.0.0.0:3000 location) to the page of your choosing in your site.git
 
 get "welcome/index" 
 get "welcome" => "welcome#index"
 get "bio/bio" 
 get "sitemap/sitemap" 
 get "contact/contact"
+get "welcome/visitor" => "welcome#visitor"
+
+post "welcome/visitor" => "welcome#visitor"
+
 
 # get "welcome/" => "welcome#index" - this is an example of a hash rocket.  It effectively reduces the length of the URL.
 

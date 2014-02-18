@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+<style>
+body
+{background: #606060;}
+td
+{border-width:1px; border-style:solid;}
+h1
+{font:30px arial,sans-serif; color: #FFFFFF}
+td
+{font:15px arial,sans-serif; color: #FFFFFF}
+p
+{font:15px arial,sans-serif; color: #FFFFFF}
+a
+{font:15px arial,sans-serif; color: #FFFFFF}
+</style>
+
+  <title>Jess Bowling Blog</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <h1>Jess Bowling Blog</h1>
+<table>
+<tr>
+  <td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/welcome">Home</a></td>
+  <td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/bio/bio">Bio</a></td>
+  <td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/contact/contact">Contact</a></td>
+  <td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/welcome/visitor">Visitors</a></td>
+  <td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/sitemap/sitemap">Site Map</a></td>
+</tr>
+</table>
+<p></p>
+<img src="https://med.emory.edu/excel/images/bio/Bowling.jpg">
 </head>
 <body>
 
 <%= yield %>
+
 
 </body>
 </html>
