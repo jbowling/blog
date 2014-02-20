@@ -1,5 +1,10 @@
 Blog::Application.routes.draw do
 
+  get "users/create"
+  get "users/show"
+  get "user/create"
+  get "user/show"
+  resources :users
 root "welcome#index" #Using the root command directs the root (i.e., 0.0.0.0:3000 location) to the page of your choosing in your site.git
 
 get "welcome/index" 
